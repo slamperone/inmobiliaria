@@ -23,7 +23,7 @@ class CreateVentaTable extends Migration
             $table->text('plantas');
             $table->text('avence');
             $table->integer('ano');
-            $table->timestamps();
+            $table->timestamps('');
         });
     }
 
