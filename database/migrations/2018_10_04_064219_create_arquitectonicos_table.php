@@ -14,7 +14,12 @@ class CreateArquitectonicosTable extends Migration
     public function up()
     {
         Schema::create('arquitectonicos', function (Blueprint $table) {
-            $table->increments('id');
+           $table->increments('id');
+            $table->string('nombre');
+            $table->integer('extrellas');
+            $table->string('principal',50);
+            $table->text('fotos');
+            $table->integer('ano');
             $table->timestamps();
         });
     }

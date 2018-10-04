@@ -15,6 +15,14 @@ class CreateVentaTable extends Migration
     {
         Schema::create('venta', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('nombre');
+            $table->float('precio');
+            $table->string('superficie');
+            $table->string('descCorta',300);
+            $table->text('desc');
+            $table->text('plantas');
+            $table->text('avence');
+            $table->integer('ano');
             $table->timestamps();
         });
     }
